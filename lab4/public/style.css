@@ -1,0 +1,32 @@
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#f5f7fb;color:#222;line-height:1.6}
+nav{background:#173b67;color:#fff;padding:15px 6%;display:flex;align-items:center;justify-content:space-between;gap:20px;position:sticky;top:0;z-index:10}
+.logo{font-size:24px;font-weight:700}
+nav ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+nav a{color:#fff;text-decoration:none;padding:9px 13px;border-radius:6px;font-weight:600}
+nav a:hover,nav a.active{background:#2f80ed}
+.hero{background:linear-gradient(135deg,#173b67,#2f80ed);color:#fff;text-align:center;padding:65px 20px}
+.hero h1{font-size:42px;margin-bottom:10px}
+.hero p{font-size:18px}
+.container{max-width:1050px;margin:35px auto;padding:0 20px}
+.card{background:#fff;padding:28px;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,.08);margin-bottom:25px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.course{border-left:5px solid #2f80ed}
+h2{color:#173b67;margin-bottom:18px}
+h3{color:#2f80ed;margin-bottom:8px}
+form{display:grid;gap:15px}
+label{font-weight:600}
+input,select,textarea{width:100%;padding:12px;border:1px solid #ccd4df;border-radius:7px;font-size:15px}
+textarea{min-height:120px;resize:vertical}
+button{background:#2f80ed;color:white;border:0;padding:12px 22px;border-radius:7px;font-size:16px;font-weight:700;cursor:pointer}
+button:hover{background:#173b67}
+.price{font-size:28px;color:#173b67;font-weight:700}
+table{width:100%;border-collapse:collapse;background:#fff}
+th,td{padding:14px;text-align:left;border-bottom:1px solid #ddd}
+th{background:#173b67;color:#fff}
+footer{background:#102c4d;color:#fff;text-align:center;padding:28px 20px;margin-top:50px}
+.social{margin:12px 0;display:flex;justify-content:center;gap:15px}
+.social a{display:inline-flex;width:38px;height:38px;border-radius:50%;align-items:center;justify-content:center;background:#fff;color:#173b67;text-decoration:none;font-size:18px}
+.small{color:#666;font-size:14px}
+@media(max-width:700px){nav{flex-direction:column;align-items:flex-start}.hero h1{font-size:32px}nav ul{gap:3px}nav a{padding:7px 8px;font-size:14px}}
