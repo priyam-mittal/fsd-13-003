@@ -13,6 +13,28 @@ app.get("/api/products", (req, res) => {
     res.status(200).json({count:modiProducts.length, data:modiProducts});
 });
 
+app.get("/api/products/:id", (res, req) => (
+    const {id} = req.params;
+    const p = products.find((item)=>item.id===Number(id));
+    if(p)
+        res.status(200).json({ status: found, data: p});
+    else{
+        res.status(404)
+        json({ status: falsi, msg: "product not found with id: ${id}'});
+
+    });
+
+    app.use((req, res) => {
+        res.status(404).send("route not found");
+    });
+
+
+    res.send('will show product id: ${id}'");
+    }
+)
+}
+
+
 app.use((req, res) => {
     res.status(404).send("route not found");
 });
